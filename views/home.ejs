@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="/css/home.css">
+</head>
+
+
+
+
+<body>
+
+
+<section id="main">
+    <h1>To-do-App</h1>
+
+    <div>
+        
+        <form action="create" method="post">
+           
+            <div>
+              <p>Description</p>
+              <input type="text" name="description" placeholder="Enter the description of note here" id="inp">
+            </div>
+
+         <div id="gon">
+            <div>
+
+                <h5>Category</h5>
+                <select name="type">
+                    <option>School</option>
+                    <option>College</option>
+
+                    <option>Office</option>
+
+                    <option>Personal</option>
+
+                </select>
+            </div>
+
+            <div>
+                <h5>Due Date</h5>
+                <input type="date" name="date">
+            </div>
+
+            
+         </div>
+
+    <div id="bts">
+         <div>
+            <button type="submit">
+                <i class="fas fa-plus">ADD TASK</i>
+            </button>
+        </div>
+
+        <div>
+            <i class="fas fa-trash-alt">Delete Task</i>
+        </div>
+    </div>
+        </form>
+
+
+
+    </div>
+
+</section>
+
+<section>
+
+    
+</section>
+
+
+
+</body>
+
+</html>

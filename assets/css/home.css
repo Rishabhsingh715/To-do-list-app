@@ -1,0 +1,43 @@
+body{
+    width: 55vw;
+    
+    border: 4px solid black;
+}
+
+h1{
+    text-align: center;
+}
+
+#inp{
+    width: 100%;
+    height: 25%;
+}
+
+input[type="date"]{
+    border:none;
+}
+select{
+    border: none;
+}
+#gon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+#gon div{
+    width: 50%;
+    /* text-align: center; */
+    margin: 1rem;
+}
+
+.fas{
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
+
+#bts{
+    display: flex;
+    flex-direction: row;
+}
