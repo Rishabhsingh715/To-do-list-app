@@ -8,19 +8,11 @@ module.exports.create = function(req,res){
         return;};
 
         console.log('*****',newContact);
+
+        res.redirect('back');
         
     });
 
-Contact.find({},function(err, contacts){
-    if(err){
-        console.log('error fetching the contacts');
-        return;
-    }
-     console.log(contacts);
 
-    return res.render('home',{
-        Tasklist: contacts
-    });
-});
    
 };

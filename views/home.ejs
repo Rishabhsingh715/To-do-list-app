@@ -59,9 +59,7 @@
             </button>
         </div>
 
-        <div>
-            <i class="fas fa-trash-alt">Delete Task</i>
-        </div>
+        
     </div>
         </form>
 
@@ -82,7 +80,10 @@
               <p><%=i.date %></p>
 
               <h2 id="type"><%=i.type%></h2> 
-          </div>
+              
+              <a href="/delete-task/?id=<%= i.id%>" class="delete"><i class="fas fa-trash"></i></a>
+            
+            </div>
         
     </div>
 

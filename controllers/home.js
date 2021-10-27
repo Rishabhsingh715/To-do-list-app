@@ -15,3 +15,16 @@ module.exports.home = function(req,res){
   });
    
 }
+
+module.exports.deleteTask = function(req, res){
+    const id = req.query.id;
+
+    Contact.findByIdAndDelete(id, function(err){
+        if(err){
+            console.log('error in deleting the file: ',err);
+            return;
+        }
+        console.log('deleted succesfully');
+        return res.redirect('back');
+    });
+}
