@@ -52,15 +52,15 @@
             
          </div>
 
-    <div id="bts">
-         <div>
+    
+         <div id="bts" >
             <button type="submit">
                 <i class="fas fa-plus">ADD TASK</i>
             </button>
         </div>
 
         
-    </div>
+    
         </form>
 
 
@@ -69,11 +69,11 @@
 
 </section>
 
-<section>
+<section id="other">
     <% for(let i of Tasklist){ %>
 
     <div id="tasks"> 
-        <h2> <%=i.description %> </h2>
+        <p> <%=i.description %> </p>
 
           <div id="taskss">
               <i class="fas fa-calendar-alt"></i>

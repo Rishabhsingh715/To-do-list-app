@@ -14,16 +14,20 @@ p{
 
 #inp{
     width: 100%;
-    
+    background-color: khaki;
     border-width: 0px 0px 1px 0px;
     
 }
 
 input[type="date"]{
     border:none;
+    background-color: khaki;
+
 }
 select{
     border: none;
+    background-color: khaki;
+
 }
 #gon{
     display: flex;
@@ -39,13 +43,15 @@ select{
 
 .fas{
     background-color: red;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 1rem;
 }
 
 #bts{
     display: flex;
     flex-direction: row;
+    margin-left: 35%;
+    margin-top: 2%;
 }
 #tasks{
     width: 60%;
@@ -59,17 +65,28 @@ select{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border-radius: 10%;
 }
 #taskss i{
     background-color: white;
     color: violet;
+    background-color: dimgray;
+    border-radius: 10%;
+
 }
 #type{
     background-color: yellow;
     position: relative;
-    
+    border-radius: 10%;
     top: -1.5rem;
     padding: 0.5rem;
     font-size: 1rem;
     font-family: cursive;
+}
+
+#main{
+    background-color: burlywood;
+}
+#other{
+    background-color: darkslategrey;
 }
