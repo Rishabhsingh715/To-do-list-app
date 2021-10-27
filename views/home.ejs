@@ -26,7 +26,7 @@
             </div>
 
          <div id="gon">
-            <div>
+            <!-- <div>
 
                 <h5>Category</h5>
                 <select name="type">
@@ -38,7 +38,7 @@
                     <option>Personal</option>
 
                 </select>
-            </div>
+            </div> -->
 
             <div>
                 <h5>Due Date</h5>
@@ -68,8 +68,13 @@
 </section>
 
 <section>
+    <% for(let i of Tasklist){ %>
 
-    
+
+        <p> <%=i.description %> </p>
+        <p><%=i.date %></p>
+
+        <%}%>
 </section>
 
 
