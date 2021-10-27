@@ -21,10 +21,14 @@
         <form action="create" method="post">
            
             <div>
-              <p>Description</p>
+                <div>
+                 <p>Description</p> 
+                </div>
+
+            <div>
               <input type="text" name="description" placeholder="Enter the description of note here" id="inp">
             </div>
-
+        </div>
          <div id="gon">
             <div>
 
@@ -68,7 +72,21 @@
 </section>
 
 <section>
+    <% for(let i of Tasklist){ %>
 
+    <div id="tasks"> 
+        <h2> <%=i.description %> </h2>
+
+          <div id="taskss">
+              <i class="fas fa-calendar-alt"></i>
+              <p><%=i.date %></p>
+
+              <h2 id="type"><%=i.type%></h2> 
+          </div>
+        
+    </div>
+
+        <%}%>
     
 </section>
 

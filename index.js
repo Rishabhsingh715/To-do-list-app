@@ -11,7 +11,7 @@ const Contact = require('./models/tasks');
 const app = express();
 const port = 8000;
 
-app.use('/', require('./routes'));
+
 
 //set up the view engine
 app.set('view engine', 'ejs');
@@ -22,6 +22,7 @@ app.use(express.urlencoded()); //parser\ middleware;
 //middleware 1
 app.use(express.static('assets'));
 
+app.use('/', require('./routes'));
 
 app.listen(port,function(err){
     if(err){
