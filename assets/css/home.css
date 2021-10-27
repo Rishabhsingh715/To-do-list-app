@@ -84,6 +84,14 @@ select{
     font-family: cursive;
 }
 
+@media screen and (max-width : 900px) {
+    #taskss{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
 #main{
     background-color: burlywood;
 }
